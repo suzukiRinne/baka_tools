@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="css/Gacha.css" rel="stylesheet" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+SSR率:<input type="text" id="ssr" value="6">%
+&nbsp&nbsp&nbsp
+<br>
+
+<button onclick="gacha_once()">抽卡</button>
+
+<button onclick="gacha_ten()">十连</button>
+
+<p></p>
+<dev>
+    <img src=""><img src="" ><img src=""><br>
+</dev>
+    <img src="" ><img src=""><img src="" ><img src=""><br>
+<dev>
+    <img src="" ><img src=""><img src="" >
+</dev>
+<br>
+<dev id="count">
+    统计：<br>
+    抽卡次数<span id="Gacha_count"></span>&nbsp&nbsp&nbspSSR数<span id="SSR_count"></span>&nbsp&nbsp&nbsp实际SSR率<span id="drop_rate"></span>
+</dev>
+
+<script src="js/Gacha.js"></script>
+
+</body>
+</html>
