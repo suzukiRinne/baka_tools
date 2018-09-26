@@ -38,7 +38,7 @@ function get_rare() {
 }
 
 function ssr_num(){
-    var num = random(1,14)
+    var num = random(1,194)
     return num
 }
 
