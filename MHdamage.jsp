@@ -100,6 +100,8 @@
 攻击期望：<span id="final_damage"></span> <br>
 <div id="damage_write" style="display:none">
     <button onclick="damage_record()" >记录结果</button><br>
+</div>
+<div id="compare" style="display:none">
     记录伤害：<span id="last_damage">0</span><br>
     较记录伤害期望变化: <span id="change_damage"></span>
 </div>
@@ -156,9 +158,9 @@
     }
 
         function damage_record() {
+            document.getElementById("compare").style.display="block"
             write_damage = final_damage
             document.getElementById("last_damage").innerText = write_damage;
-
         }
 
 
