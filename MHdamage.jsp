@@ -97,7 +97,7 @@
       <button onclick="damage()">计算</button>
   </div>
   <br><br>仅适用物理部分<br>
-  攻击期望：<span id="final_damage"></span>
+  攻击期望：<span id="final_damage"></span><br>
   期望变化: <span id="change_damage"></span>
 
   <script >
