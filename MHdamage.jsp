@@ -101,6 +101,7 @@
   期望变化: <span id="change_damage"></span>
 
   <script >
+      var last_damage = 0
       function damage() {
           var rate = document.getElementById("rate").value
           var initial_atk = document.getElementById("initial_atk").value;
@@ -134,12 +135,12 @@
                   crit_rate = 75;
                   all_crit = - all_crit;
               }
-              var last_damage=0;
+              
               var damage = 0;
               damage = ( Number(all_atk * all_crit * crit_rate / 10000) + Number(all_atk * (100-all_crit) / 100)) * sharpness;
               damage = Math.round(damage*100)/100
               var change_damage = damage - last_damage;
-            
+              last_damage = damage;
               document.getElementById("final_damage").innerText = damage;
               document.getElementById("change_damage").innerText = change_damage;
 
