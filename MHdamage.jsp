@@ -98,7 +98,7 @@
   </div>
   <br><br>仅适用物理部分<br>
   攻击期望：<span id="final_damage"></span><br>
-  期望变化: <span id="change_damage"></span>
+  较上次结果期望变化: <span id="change_damage"></span>
 
   <script >
       var last_damage = 0
