@@ -30,7 +30,7 @@
     武器会心:<input type="text" id="initial_crit" >%
     <br>技能<br>
       斩味:<select id="sharpness">
-      <option value ="1">无（默认绿斩）</option>
+      <option value ="1.32">（默认白斩）</option>
       <option value ="1.32">白</option>
       <option value ="1.2">蓝</option>
       <option value ="1.05">绿</option>
