@@ -97,7 +97,8 @@
       <button onclick="damage()">计算</button>
   </div>
   <br><br>仅适用物理部分<br>
-  攻击期望：<span>0</span>
+  攻击期望：<span id="final_damage"></span>
+  期望变化: <span id="change_damage"></span>
 
   <script >
       function damage() {
@@ -133,13 +134,15 @@
                   crit_rate = 75;
                   all_crit = - all_crit;
               }
-
+              var last_damage=0;
               var damage = 0;
               damage = ( Number(all_atk * all_crit * crit_rate / 10000) + Number(all_atk * (100-all_crit) / 100)) * sharpness;
               damage = Math.round(damage*100)/100
+              var change_damage = damage - last_damage;
+            
+              document.getElementById("final_damage").innerText = damage;
+              document.getElementById("change_damage").innerText = change_damage;
 
-              var mydamage = document.querySelector('span');
-              mydamage.textContent =  damage;
           }
 
       }
