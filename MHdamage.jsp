@@ -29,8 +29,8 @@
     &nbsp&nbsp&nbsp
     武器会心:<input type="text" id="initial_crit" >%
     <br>技能<br>
-      斩味:<select id="sharpness">
-      <option value ="1.32">（默认白斩）</option>
+      斩味:<select id="sharpness">（远程武器请勿选择）
+      <option value ="1">（默认黄斩）</option>
       <option value ="1.32">白</option>
       <option value ="1.2">蓝</option>
       <option value ="1.05">绿</option>
