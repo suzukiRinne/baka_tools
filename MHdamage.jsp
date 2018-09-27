@@ -140,6 +140,7 @@
               damage = ( Number(all_atk * all_crit * crit_rate / 10000) + Number(all_atk * (100-all_crit) / 100)) * sharpness;
               damage = Math.round(damage*100)/100
               var change_damage = damage - last_damage;
+              change_damage = Math.round(change_damage*100)/100
               last_damage = damage;
               document.getElementById("final_damage").innerText = damage;
               document.getElementById("change_damage").innerText = change_damage;
