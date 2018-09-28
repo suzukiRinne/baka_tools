@@ -63,7 +63,7 @@ function img_get(i) {
 function gacha_clear(){
     var i = 0
     for(i=0;i<10;i++){
-        document.getElementsByTagName("img")[i].setAttribute("src","")
+        document.getElementsByTagName("img")[i].setAttribute("src","img/null.png")
     }
 }
 
