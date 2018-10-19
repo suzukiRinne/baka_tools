@@ -22,9 +22,9 @@ function get_rare() {
     var info = input_get()
     var ssr_rate = info[0]
     var sum_rate = info[2]
-
+    ssr_rate = ssr_rate * 100
     var cardrare = 0
-    var roll = random(1,100)
+    var roll = random(1,10000)
     if (roll <= ssr_rate) {
         cardrare = "SSR"
     }
