@@ -13,9 +13,11 @@ function input_confirm() {
     var ssr_rate = info[0]
     var sr_rate = info[1]
     var sum_rate = info[2]
-
+    var gacha_stop = 0
     if (ssr_rate<0 || sr_rate<0 || sum_rate>100) {
         alert("请正确输入概率")
+        gacha_stop = 1;
+        return gacha_stop;
     }
 }
 function get_rare() {
@@ -88,28 +90,36 @@ function  gacha_warn(times) {
     }
 }
 function gacha_once() {
-    input_confirm()
+    var istop = input_confirm()
+    if(istop == 1)
+    {
+        return
+    }
     gacha_clear()
-    gacha_warn(1)
     var gacha_get = document.querySelector('p')
     gacha_get.innerText = "结果"
     var i = 0
     img_get(i)
+    gacha_warn(1)
     Gacha_count++
     show_count()
     add_count()
 }
 
 function gacha_ten() {
-    input_confirm()
+    var istop = input_confirm()
+    if(istop == 1)
+    {
+        return
+    }
     gacha_clear()
-    gacha_warn(10)
     var gacha_get = document.querySelector('p')
     gacha_get.innerText = "结果"
     var i = 0
     for(i=0;i<10;i++){
         img_get(i)
     }
+    gacha_warn(10)
     Gacha_count = Gacha_count + 10
     show_count()
     add_count()
