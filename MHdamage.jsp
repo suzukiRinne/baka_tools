@@ -25,9 +25,9 @@
     <option value ="1.5">重弩</option>
 </select>
     <br>
-    武器攻击:<input type="number" id="initial_atk" required>
+    武器攻击:<input type="number" id="initial_atk" required="required">
     &nbsp&nbsp&nbsp
-    武器会心:<input type="number" id="initial_crit" required>%
+    武器会心:<input type="number" id="initial_crit" required="required">%
     <br>技能<br>
     斩味（远程武器请勿选择）:<select id="sharpness">
     <option value ="1">（默认黄斩）</option>
