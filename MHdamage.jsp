@@ -138,9 +138,14 @@
             if(all_crit >= 100){
                 all_crit = 100 ;
             }
-            if(all_crit <= 0){
+            if(all_crit < 0 && all_crit >=-100){
                 crit_rate = 75;
                 all_crit = - all_crit;
+            }
+            if(all_crit <-100)
+            {
+                crit_rate = 75
+                all_crit = 100
             }
 
             final_damage = ( Number(all_atk * all_crit * crit_rate / 10000) + Number(all_atk * (100-all_crit) / 100)) * sharpness;
