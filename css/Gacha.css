@@ -13,7 +13,7 @@ button{
     width:100px;
     height:30px;
 }
-button:hover
+button:hover:before
 { 
-background-color:aqua;
+    content:"非洲";
 }
