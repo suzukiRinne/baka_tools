@@ -27,6 +27,17 @@
     武器攻击:<input type="number" id="initial_atk" >
     &nbsp&nbsp&nbsp
     武器会心:<input type="number" id="initial_crit" >%
+    <br>猫饭:<select id="meal">
+    <option value ="0">无</option>
+    <option value ="5">攻小</option>
+    <option value ="10">攻中</option>
+    <option value ="15">攻大</option>
+</select>
+    <br>道具使用
+    <p><input type="checkbox" name="drug" value="5" />鬼人药</p>
+    <p><input type="checkbox" name="drug" value="7" />鬼人药G</p>
+    <p><input type="checkbox" name="drug" value="10" />鬼人种子</p>
+    <p><input type="checkbox" name="drug" value="10" />鬼人粉尘</p>
     <br>技能<br>
     斩味（远程武器请勿选择）:<select id="sharpness">
     <option value ="1">（默认黄斩）</option>
@@ -125,7 +136,17 @@
         var add_atk2 = document.getElementById("add_atk2").value;
 
         var crit_rate = document.getElementById("crit_rate").value;
-
+        
+        var meal = document.getElementById("meal").value
+        initial_atk = initial_atk + meal;        
+        
+        var drug=document.getElementsByName("drug"); 
+            for(var i=0;i<drug.length;i++){
+                 if(drug[i].checked){
+                     initial_atk = initial_atk + r[i].value;
+                    }
+                }      
+              
         if(rate==0) {
             alert("请选择武器");
         }
