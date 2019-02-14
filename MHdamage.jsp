@@ -140,13 +140,13 @@
         var meal = document.getElementById("meal").value
         var drug_atk = 0;       
         
-        var drug=document.getElementsByName("drug"); 
+        var drug = document.getElementsByName("drug"); 
             for(var i=0;i<drug.length;i++){
                  if(drug[i].checked){
                      drug_atk = drug_atk + r[i].value;
                     }
                 }      
-              
+          alert(drug_atk);
         if(rate==0) {
             alert("请选择武器");
         }
