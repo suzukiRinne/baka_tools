@@ -33,11 +33,11 @@
     <option value ="10">攻中</option>
     <option value ="15">攻大</option>
 </select>
-    <br>道具使用
-    <input type="checkbox" name="drug" value="5" />鬼人药  
-    <input type="checkbox" name="drug" value="7" />鬼人药G  
-    <input type="checkbox" name="drug" value="10" />鬼人种子    
-    <input type="checkbox" name="drug" value="10" />鬼人粉尘  
+    <br>道具使用：
+    <input type="checkbox" name="drug" value="5" />鬼人药     
+    <input type="checkbox" name="drug" value="7" />鬼人药G     
+    <input type="checkbox" name="drug" value="10" />鬼人种子       
+    <input type="checkbox" name="drug" value="10" />鬼人粉尘     
     <br>技能<br>
     斩味（远程武器请勿选择）:<select id="sharpness">
     <option value ="1">（默认黄斩）</option>
