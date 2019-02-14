@@ -151,7 +151,7 @@
             alert("请选择武器");
         }
         else {
-            var all_atk = Number(initial_atk) * Number(non_elemental)/100 / Number(rate) + Number(add_atk) + Number(add_atk2) + meal + drug_atk;
+            var all_atk = Number(initial_atk) * Number(non_elemental)/100 / Number(rate) + Number(add_atk) + Number(add_atk2) + Number(meal) + Number(drug_atk);
             var all_crit = Number(initial_crit) + Number(add_crit) + Number(add_crit2) + Number(add_crit3);
             if(add_atk >= 12) {
                 all_crit = all_crit + 5;
