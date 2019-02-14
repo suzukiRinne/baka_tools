@@ -156,7 +156,6 @@
         if(dust.checked){
             drug_atk = Number(drug_atk) + Number(dust.value);
         }
-        alert(drug_atk);
           
         if(rate==0) {
             alert("请选择武器");
