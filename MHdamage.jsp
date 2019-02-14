@@ -34,10 +34,10 @@
     <option value ="15">攻大</option>
 </select>
     <br>道具使用
-    <p><input type="checkbox" name="drug" value="5" />鬼人药</p>
-    <p><input type="checkbox" name="drug" value="7" />鬼人药G</p>
-    <p><input type="checkbox" name="drug" value="10" />鬼人种子</p>
-    <p><input type="checkbox" name="drug" value="10" />鬼人粉尘</p>
+    <input type="checkbox" name="drug" value="5" />鬼人药  
+    <input type="checkbox" name="drug" value="7" />鬼人药G  
+    <input type="checkbox" name="drug" value="10" />鬼人种子    
+    <input type="checkbox" name="drug" value="10" />鬼人粉尘  
     <br>技能<br>
     斩味（远程武器请勿选择）:<select id="sharpness">
     <option value ="1">（默认黄斩）</option>
@@ -138,12 +138,12 @@
         var crit_rate = document.getElementById("crit_rate").value;
         
         var meal = document.getElementById("meal").value
-        initial_atk = initial_atk + meal;        
+        var drug_atk = 0;       
         
         var drug=document.getElementsByName("drug"); 
             for(var i=0;i<drug.length;i++){
                  if(drug[i].checked){
-                     initial_atk = initial_atk + r[i].value;
+                     drug_atk = drug_atk + r[i].value;
                     }
                 }      
               
@@ -151,7 +151,7 @@
             alert("请选择武器");
         }
         else {
-            var all_atk = Number(initial_atk) * Number(non_elemental)/100 / Number(rate) + Number(add_atk) + Number(add_atk2);
+            var all_atk = Number(initial_atk) * Number(non_elemental)/100 / Number(rate) + Number(add_atk) + Number(add_atk2) + meal + drug_atk;
             var all_crit = Number(initial_crit) + Number(add_crit) + Number(add_crit2) + Number(add_crit3);
             if(add_atk >= 12) {
                 all_crit = all_crit + 5;
