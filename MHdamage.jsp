@@ -34,10 +34,10 @@
     <option value ="15">攻大</option>
 </select>
     <br>道具使用：
-    <input type="checkbox" name="drug" value="5" />鬼人药 &nbsp&nbsp&nbsp&nbsp
-    <input type="checkbox" name="drug" value="7" />鬼人药G &nbsp&nbsp&nbsp&nbsp
-    <input type="checkbox" name="drug" value="10" />鬼人种子 &nbsp&nbsp&nbsp&nbsp
-    <input type="checkbox" name="drug" value="10" />鬼人粉尘 &nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="drug" value="5" />鬼人药 &nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="drugG" value="7" />鬼人药G &nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="seed" value="10" />鬼人种子 &nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="dust" value="10" />鬼人粉尘 &nbsp&nbsp&nbsp&nbsp
     <br>技能<br>
     斩味（远程武器请勿选择）:<select id="sharpness">
     <option value ="1">（默认黄斩）</option>
@@ -138,15 +138,26 @@
         var crit_rate = document.getElementById("crit_rate").value;
         
         var meal = document.getElementById("meal").value
-        var drug_atk = 0;       
         
-        var drug = document.getElementsByName("drug"); 
-            for(var i=0;i<drug.length;i++){
-                 if(drug[i].checked){
-                     drug_atk = drug_atk + r[i].value;
-                    }
-                }      
-          alert(drug_atk);
+        var drug_atk = 0;     
+        var drug = document.getElementById("drug");
+        if(drug.checked){
+            drug_atk = Number(drug_atk) + Number(drug.value);
+        }
+         var drugG = document.getElementById("drugG");
+        if(drugG.checked){
+            drug_atk = Number(drug_atk) + Number(drugG.value);
+        }
+         var seed = document.getElementById("seed");
+        if(seed.checked){
+            drug_atk = Number(drug_atk) + Number(seed.value);
+        }
+        var dust = document.getElementById("dust");
+        if(dust.checked){
+            drug_atk = Number(drug_atk) + Number(dust.value);
+        }
+        alert(drug_atk);
+          
         if(rate==0) {
             alert("请选择武器");
         }
