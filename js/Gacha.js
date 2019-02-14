@@ -2,7 +2,7 @@
 var Gacha_count = 0
 var SSR_count = 0
 var drop_rate = 0
-
+/*
 function dream() {
     var dream_rate = document.getElementById("ssr").value
     if (dream_rate > 6)
@@ -11,6 +11,7 @@ function dream() {
         document.getElementById("ssr").value = "6"
     }
 }
+*/
 function input_get() {
     var ssr_rate = document.getElementById("ssr").value
     var sr_rate = 0
