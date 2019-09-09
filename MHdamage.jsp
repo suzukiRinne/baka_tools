@@ -41,6 +41,7 @@
     <br>技能<br>
     斩味（远程武器请勿选择）:<select id="sharpness">
     <option value ="1">（默认黄斩）</option>
+    <option value ="1.39">紫</option>
     <option value ="1.32">白</option>
     <option value ="1.2">蓝</option>
     <option value ="1.05">绿</option>
@@ -50,7 +51,7 @@
 </select><br>
     无击:<select id="non_elemental">
     <option value ="100">无</option>
-    <option value ="110">有</option>
+    <option value ="105">有</option>
 </select>&nbsp&nbsp&nbsp
     攻击:<select id="add_atk">
     <option value ="0">无</option>
@@ -72,13 +73,13 @@
     <br>
     看破:<select id="add_crit">
     <option value ="0">无</option>
-    <option value ="3">1</option>
-    <option value ="6">2</option>
-    <option value ="10">3</option>
-    <option value ="15">4</option>
-    <option value ="20">5</option>
-    <option value ="25">6</option>
-    <option value ="30">7</option>
+    <option value ="5">1</option>
+    <option value ="10">2</option>
+    <option value ="15">3</option>
+    <option value ="20">4</option>
+    <option value ="25">5</option>
+    <option value ="30">6</option>
+    <option value ="40">7</option>
 </select>
     &nbsp&nbsp&nbsp
     弱点特效:<select id="add_crit2">
