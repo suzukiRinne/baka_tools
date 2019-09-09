@@ -84,9 +84,12 @@
     &nbsp&nbsp&nbsp
     弱点特效:<select id="add_crit2">
     <option value ="0">无</option>
-    <option value ="15">1</option>
-    <option value ="30">2</option>
-    <option value ="50">3</option>
+    <option value ="15">1软化</option>
+    <option value ="30">2软化</option>
+    <option value ="50">3软化</option>
+    <option value ="10">1</option>
+    <option value ="15">2</option>
+    <option value ="30">3</option>
 </select>
     &nbsp&nbsp&nbsp
     精神抖擞:<select id="add_crit3">
