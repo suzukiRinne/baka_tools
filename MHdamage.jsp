@@ -1,7 +1,7 @@
 
 <html>
 <head>
-    <title>$Title$</title>
+    <title>MHdamage</title>
 </head>
 <body>
 
