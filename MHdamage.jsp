@@ -33,6 +33,12 @@
     <option value ="10">攻中</option>
     <option value ="15">攻大</option>
 </select>
+ &nbsp&nbsp&nbsp&nbsp
+不屈:<select id="Unyielding">
+    <option value ="0">无</option>
+    <option value ="1.1">1猫</option>
+    <option value ="1.21">2猫</option>
+</select>
     <br>道具使用：
     <input type="checkbox" id="drug" value="5" />鬼人药 &nbsp&nbsp&nbsp&nbsp
     <input type="checkbox" id="drugG" value="7" />鬼人药G &nbsp&nbsp&nbsp&nbsp
@@ -142,6 +148,7 @@
         var crit_rate = document.getElementById("crit_rate").value;
         
         var meal = document.getElementById("meal").value
+        var Unyielding = document.getElementById("Unyielding").value
         
         var drug_atk = 0;     
         var drug = document.getElementById("drug");
@@ -165,7 +172,7 @@
             alert("请选择武器");
         }
         else {
-            var all_atk = Number(initial_atk) * Number(non_elemental)/100 / Number(rate) + Number(add_atk) + Number(add_atk2) + Number(meal) + Number(drug_atk);
+            var all_atk = Number(initial_atk) *Number(Unyielding) *Number(non_elemental)/100 / Number(rate) + Number(add_atk) + Number(add_atk2) + Number(meal) + Number(drug_atk);
             var all_crit = Number(initial_crit) + Number(add_crit) + Number(add_crit2) + Number(add_crit3);
             if(add_atk >= 12) {
                 all_crit = all_crit + 5;
