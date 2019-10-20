@@ -35,7 +35,7 @@
 </select>
  &nbsp&nbsp&nbsp&nbsp
 不屈:<select id="Unyielding">
-    <option value ="0">无</option>
+    <option value ="1">无</option>
     <option value ="1.1">1猫</option>
     <option value ="1.21">2猫</option>
 </select>
