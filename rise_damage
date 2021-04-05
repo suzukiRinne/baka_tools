@@ -5,24 +5,8 @@
 <body>
 
 <div>
-    选择武器:<select id="rate">
-    <option value ="0"></option>
-    <option value ="1">弓</option>
-    <option value ="1">太刀</option>
-    <option value ="1">大剑</option>
-    <option value ="1">盾斧</option>
-    <option value ="1">片手剑</option>
-    <option value ="1">双刀</option>
-    <option value ="1">大锤</option>
-    <option value ="1">狩猎笛</option>
-    <option value ="1">长枪</option>
-    <option value ="1">铳枪</option>
-    <option value ="1">斩击斧</option>
-    <option value ="1">操虫棍</option>
-    <option value ="1">轻弩</option>
-    <option value ="1">重弩</option>
-</select>
-    <br>
+   
+
     武器攻击:<input type="number" id="initial_atk" >
     &nbsp&nbsp&nbsp
     武器会心:<input type="number" id="initial_crit" >%
@@ -131,7 +115,7 @@
     var final_damage = 0
     var change_damage = 0
     function damage() {
-        var rate = document.getElementById("rate").value
+       
         var initial_atk = document.getElementById("initial_atk").value;
         var initial_crit = document.getElementById("initial_crit").value;
         var sharpness = document.getElementById("sharpness").value;
@@ -164,10 +148,8 @@
             drug_atk = Number(drug_atk) + Number(dust.value);
         }
           
-        if(rate==0) {
-            alert("请选择武器");
-        }
-        else {
+       
+        {
             if (add_atk == 1){
             add_atk = 3;
             }
@@ -189,7 +171,7 @@
             else if (add_atk == 7){
             add_atk = Number(initial_atk)*0.1+10;
             }
-            var all_atk = Number(initial_atk) *Number(Unyielding) *Number(non_elemental)/100 / Number(rate) + Number(add_atk) + Number(add_atk2) + Number(meal) + Number(drug_atk);
+            var all_atk = Number(initial_atk) *Number(Unyielding) *Number(non_elemental)/100 + Number(add_atk) + Number(add_atk2) + Number(meal) + Number(drug_atk);
             var all_crit = Number(initial_crit) + Number(add_crit) + Number(add_crit2) + Number(add_crit3);
             
             if(all_crit >= 100){
