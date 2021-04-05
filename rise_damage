@@ -169,25 +169,25 @@
         }
         else {
             if add_atk == 1{
-            add_atk = 3
+            add_atk = 3;
             }
             if add_atk == 2{
-            add_atk = 6
+            add_atk = 6;
             }
             if add_atk == 3{
-            add_atk = 9
+            add_atk = 9;
             }
             if add_atk == 4{
-            add_atk = Number(initial_atk)*1.05+7
+            add_atk = Number(initial_atk)*1.05+7;
             }
             if add_atk == 5{
-            add_atk = Number(initial_atk)*1.06+8
+            add_atk = Number(initial_atk)*1.06+8;
             }
             if add_atk == 6{
-            add_atk = Number(initial_atk)*1.08+9
+            add_atk = Number(initial_atk)*1.08+9;
             }
             if add_atk == 7{
-            add_atk = Number(initial_atk)*1.1+10
+            add_atk = Number(initial_atk)*1.1+10;
             }
             var all_atk = Number(initial_atk) *Number(Unyielding) *Number(non_elemental)/100 / Number(rate) + Number(add_atk) + Number(add_atk2) + Number(meal) + Number(drug_atk);
             var all_crit = Number(initial_crit) + Number(add_crit) + Number(add_crit2) + Number(add_crit3);
